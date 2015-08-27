@@ -7,7 +7,7 @@
 /*  SECTIONS  */
 .section {
   clear: both;
-  padding: 0 1.6%;
+  padding: 0 1.6% 0 0;
   margin: 0px;
 }
 
@@ -18,7 +18,7 @@
   float:left;
   margin: 1% 0 1% 1.6%;
 }
-.col:first-child { margin-left: 0; }
+/*.col:first-child { margin-left: 0; }
 
 
 /*  GROUPING  */
@@ -43,6 +43,30 @@
   width: 66.1%;
 }
 .span1-of-3 {
-  width: 32.2%;
-  
+  width: 31.7333%;
 }
+
+/*  MEDIA QUERIES  */
+
+
+/*  GO TWO COLUMN AT LESS THAN 1100 PIXELS */
+
+@media only screen and (max-width: 1000px) {
+  .span1-of-3 { 
+    width: 48%; 
+    margin: 1% 1%;
+  }
+  .section { padding: 1%;}
+} 
+
+/*  GO FULL WIDTH AT LESS THAN 700 PIXELS */
+
+@media only screen and (max-width: 700px) {
+  .span3-of-3, .span2-of-3, .span1-of-3 { 
+    width: 96%; 
+    margin: 2% 2%;
+  }
+  .section { padding: 1%;}
+}
+
+
