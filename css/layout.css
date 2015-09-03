@@ -1,14 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200);
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
+
+.nav {
+  background-color: #ccc;
+  height: 100%;
+  width: 20%;
+  float: left;
+  clear: both;
+  position: fixed;
+}
+
+/* TYPOGRAPHY */
+
+
+.title {
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+
+
+
 /*  SECTIONS  */
 .section {
   clear: both;
   padding: 0 1.6% 0 0;
   margin: 0px;
+  float: right;
+  width: 80%;
+}
+
+.thumbnail {
+  background-color: #ccc;
+  padding: 15%;
+  display: block;
+  text-decoration: none;
+}
+
+.tile-icon {
+  height: 80px;
+  width: 80px;
+  margin: 0 auto;
+  background-color: #2f3f50;
+  margin-bottom: 15%;
 }
 
 
@@ -46,6 +89,9 @@
   width: 31.7333%;
 }
 
+
+
+
 /*  MEDIA QUERIES  */
 
 
@@ -66,7 +112,11 @@
     width: 96%; 
     margin: 2% 2%;
   }
-  .section { padding: 1%;}
+  .section { 
+    padding: 1%;
+    width: 100%;
+  }
+  .nav { display: none; }
 }
 
 

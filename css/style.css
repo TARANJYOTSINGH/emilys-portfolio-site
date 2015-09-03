@@ -1,21 +1,4 @@
-.nav {
-  background-color: #ccc;
-  height: 100%;
-  width: 20%;
-  float: left;
-  clear: both;
-  position: fixed;
-}
 
-.content-container {
-  /*background-color: #089cbe;*/
-  float: right;
-  width: 80%;
-}
 
-.thumbnail {
-  background-color: #ccc;
-  height: 60px;
-  display: block;
-  text-decoration: none;
-}
+
+
