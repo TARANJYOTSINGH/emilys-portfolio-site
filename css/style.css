@@ -1,3 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200);
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* NAV */
+
+.nav {
+  background-color: #ccc;
+  height: 100%;
+  width: 20%;
+  float: left;
+  clear: both;
+  position: fixed;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.myname {
+  text-transform: uppercase;
+}
+
+.nav a{
+  display: block;
+
+}
+
+/* TYPOGRAPHY */
+
+a {
+  text-decoration: none;
+}
+
+
+.title {
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+
+
+
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0 1.6% 0 0;
+  margin: 0px;
+  float: right;
+  width: 80%;
+}
+
+.thumbnail {
+  background-color: #ccc;
+  padding: 15%;
+  display: block;
+  text-decoration: none;
+}
+
+.tile-icon {
+  height: 80px;
+  width: 80px;
+  margin: 0 auto;
+  background-color: #2f3f50;
+  margin-bottom: 15%;
+}
+
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+/*.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content:"";
+  display:table;
+}
+.group:after {
+  clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+
+/*  GRID OF THREE  */
+.span3-of-3 {
+  width: 100%;
+}
+.span2-of-3 {
+  width: 66.1%;
+}
+.span1-of-3 {
+  width: 31.7333%;
+}
+
+
+
+
+/*  MEDIA QUERIES  */
+
+
+/*  GO TWO COLUMN AT LESS THAN 1100 PIXELS */
+
+@media only screen and (max-width: 1000px) {
+  .span1-of-3 { 
+    width: 48%; 
+    margin: 1% 1%;
+  }
+  .section { padding: 1%;}
+} 
+
+/*  GO FULL WIDTH AT LESS THAN 700 PIXELS */
+
+@media only screen and (max-width: 700px) {
+  .span3-of-3, .span2-of-3, .span1-of-3 { 
+    width: 96%; 
+    margin: 2% 2%;
+  }
+  .section { 
+    padding: 1%;
+    width: 100%;
+  }
+  .nav { display: none; }
+}
 
 
 
