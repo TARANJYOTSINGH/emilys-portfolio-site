@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200);
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Source+Sans+Pro:400,600);
 
 * {
   -webkit-box-sizing: border-box;
@@ -17,22 +17,38 @@
   position: fixed;
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+
 
 }
 
-.myname {
-  text-transform: uppercase;
+h1 {
+  font-size: 2em;
 }
 
 .nav a{
   display: block;
-
+  font-size: 1.5em;
 }
 
 /* TYPOGRAPHY */
 
 a {
   text-decoration: none;
+}
+
+h1, h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+
+h3, h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'EB Garamond', serif;
 }
 
 
@@ -44,10 +60,22 @@ a {
   color: white;
 }
 
+/* IMGS */
+.mainphoto {
+  margin: 0 auto;
+  background-color: #ccc;
+  width: 600px;
+  height: 400px;
+}
 
 
 
 /*  SECTIONS  */
+.container {
+  padding: 0 1.6% 0 0;
+  margin: 0px;
+}
+
 .section {
   clear: both;
   padding: 0 1.6% 0 0;
