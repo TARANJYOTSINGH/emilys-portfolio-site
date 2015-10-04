@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Source+Sans+Pro:400,600);
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Raleway:200,400);
 
 * {
   -webkit-box-sizing: border-box;
@@ -83,36 +83,44 @@
 /* NAV */
 
 .nav {
-  /*background-color: #97C8C4;*/
-  background: linear-gradient(#FFFFFF, #ECE9E6);
+  /*background-color: #1c1c1c;*/
+  /*background: linear-gradient(#FFFFFF, #ECE9E6);*/
+  background: linear-gradient(#414345, #232526);
   height: 100%;
   width: 20%;
   float: left;
   clear: both;
   position: fixed;
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
   text-transform: uppercase;
-  color: #404040;
+  color: #414141;
 }
 
-h1 {
+.myname {
   font-size: 2em;
+  font-weight: 400;
+  color: #ADA074;
+  margin-bottom: 5px;
+  margin-top: 40px;
 }
 
-.nav h1 {
-  margin-top: 40px;
-  margin-bottom: 50px;
+.nav-heading-div {
+  margin-bottom: 60px;
 }
 
 .nav a{
   display: block;
   font-size: 1.5em;
   margin-bottom: 20px;
+  color: #ECE9E6;
 }
 
-a:visited {
-  color: #a9a9a9;
+
+
+nav a:visited {
+  color: #ECE9E6;
 }
 
 .nav a:hover {
@@ -122,14 +130,15 @@ a:visited {
 /* TYPOGRAPHY */
 
 
-h1, h2 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 600;
+h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
 }
 
-h3, h4 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
+.subhead {
+  color: #ECE9E6;
+  font-size: 0.75em;
+  margin-top: 0;
 }
 
 p {
@@ -190,7 +199,7 @@ a {
   height: 80px;
   width: 80px;
   margin: 0 auto;
-  background-color: #2f3f50;
+  background-color: #ece9e6;
   margin-bottom: 15%;
 }
 
