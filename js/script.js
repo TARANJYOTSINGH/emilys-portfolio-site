@@ -7,16 +7,16 @@ $( document ).ready(function() {
 
     $('.spinner-master2').click(function (){
 
-      if ($('.nav-items').is(':animated')) {
+      if ($('.nav-links').is(':animated')) {
         console.log('busy');
       } else {
 
         var clicks = $(this).data('clicks');
         if (clicks){
-          $('.nav-items').slideDown('slow');
+          $('.nav-links').slideDown('slow');
           console.log("oneclick");
         } else {
-          $('.nav-items').slideUp('fast');
+          $('.nav-links').slideUp('fast');
           console.log("twoclicks");
         }
         $(this).data('clicks', !clicks);
@@ -24,15 +24,7 @@ $( document ).ready(function() {
     
     });
 
-    // $( ".spinner-master2" ).click(function() {
-    //   if ($( ".spinner-master2" ).prop("checked", false)) {
-    //     $( ".nav-items" ).slideDown( "slow" );
-    //     console.log("working");
-    //   } else {
-    //     $( ".nav-items" ).slideUp( "fast" );
-    //   }
-      
-    // });
+   
 
 
 
