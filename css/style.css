@@ -117,13 +117,15 @@
   color: #ECE9E6;
 }
 
-
-
 nav a:visited {
   color: #ECE9E6;
 }
 
 .nav a:hover {
+  text-decoration: line-through;
+}
+
+.nav a:active {
   text-decoration: line-through;
 }
 
@@ -225,7 +227,7 @@ a {
   float:left;
   margin: 1% 0 1% 1.6%;
 }
-/*.col:first-child { margin-left: 0; }
+
 
 
 /*  GROUPING  */
@@ -244,10 +246,10 @@ a {
 
 /*  GRID OF THREE  */
 .span3-of-3 {
-  width: 100%;
+  width: 98.4%;
 }
 .span2-of-3 {
-  width: 66.1%;
+  width: 48.4%;
 }
 .span1-of-3 {
   width: 31.7333%;
