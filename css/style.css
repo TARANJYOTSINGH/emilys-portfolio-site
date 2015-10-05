@@ -238,7 +238,22 @@ a {
   width: 31.7333%;
 }
 
+/*  TABLE  */
 
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+table td:nth-child(even) {
+  border-bottom: 1px dotted black;
+  font-family: 'Raleway', sans-serif;
+}
+
+table td:nth-child(odd) {
+  font-family: 'EB Garamond', serif;
+}
 
 
 /*  MEDIA QUERIES  */
