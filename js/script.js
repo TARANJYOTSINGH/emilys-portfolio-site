@@ -4,6 +4,8 @@ $( document ).ready(function() {
     // $( ".spinner-master2" ).click(function() {
     //   $( ".nav-items" ).slideDown( "slow" );
     // });
+    $("#work").css("text-decoration", "line-through");
+
 
     $('.spinner-master2').click(function (){
 
@@ -30,6 +32,8 @@ $( document ).ready(function() {
 
     $("#load_about").on("click", function() {
         $("#loader").load("about.html");
+        $(this).siblings().css("text-decoration", "none");
+        $(this).css("text-decoration", "line-through");
     });
 
 });
