@@ -184,7 +184,9 @@ a {
   height: 300px;
   background-color: #ECE9E6;
 }
-
+.nav-links-responsive{
+    display: none;
+  }
 
 
 /*  SECTIONS  */
@@ -314,7 +316,11 @@ table td:nth-child(odd) {
   .nav-links {
     display: none;
   }
-
+  
+  .nav-heading-div {
+    margin: 0px
+  }
+  
   .spinner-master2 {
     position: absolute;
     right: 7px;

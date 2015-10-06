@@ -9,16 +9,16 @@ $( document ).ready(function() {
 
     $('.spinner-master2').click(function (){
 
-      if ($('.nav-links').is(':animated')) {
+      if ($('.nav-links-responsive').is(':animated')) {
         console.log('busy');
       } else {
 
         var clicks = $(this).data('clicks');
         if (clicks){
-          $('.nav-links').slideDown('slow');
+          $('.nav-links-responsive').slideDown('slow');
           console.log("oneclick");
         } else {
-          $('.nav-links').slideUp('fast');
+          $('.nav-links-responsive').slideUp('fast');
           console.log("twoclicks");
         }
         $(this).data('clicks', !clicks);
