@@ -147,6 +147,11 @@ h1, h2, h3, h4 {
   letter-spacing: 2px;
 }
 
+.grovo {
+  color: #2f3f50;
+  font-weight: 400;
+}
+
 p {
   font-family: 'EB Garamond', serif;
 }
@@ -175,16 +180,10 @@ a {
   margin: 0 auto;
 }
 
-.mainphoto {
-  margin: 0 auto;
-  background-color: #ccc;
-  width: 600px;
-  height: 400px;
-}
 
 #project-imgs img{
   width: 100%;
-  height: 300px;
+  height: 500px;
   background-color: #ECE9E6;
 }
 .nav-links-responsive{
@@ -215,6 +214,8 @@ a {
 
 .thumbnail h2 {
   color: #a9a9a9;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
 }
 
 .tile-icon {
@@ -261,9 +262,6 @@ a {
 }
 
 /*  TABLE  */
-table {
-  margin: 0 auto;
-}
 
 
 th, td {
@@ -291,7 +289,9 @@ table td:nth-child(odd) {
     width: 48%; 
     margin: 1% 1%;
   }
-  .section { padding: 1%;}
+  .section { 
+    padding: 1%;
+  }
 } 
 
 /*  GO FULL WIDTH AT LESS THAN 700 PIXELS */
