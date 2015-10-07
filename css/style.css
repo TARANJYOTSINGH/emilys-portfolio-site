@@ -239,6 +239,9 @@ a {
 }
 
 /*  TABLE  */
+table {
+  margin: 0 auto;
+}
 
 
 th, td {
