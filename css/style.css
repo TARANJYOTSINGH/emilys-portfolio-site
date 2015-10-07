@@ -125,9 +125,12 @@ nav a:visited {
   text-decoration: line-through;
 }
 
-.nav a:active {
+
+.nav .on {
   text-decoration: line-through;
 }
+
+
 
 /* TYPOGRAPHY */
 
