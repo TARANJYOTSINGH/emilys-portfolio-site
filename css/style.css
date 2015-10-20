@@ -8,77 +8,9 @@
 
 /* NAV2 */
 
-/*SPINNER*/
-.spinner-master2 * {
-  transition:all 0.3s;
-  -webkit-transition:all 0.3s;
-  box-sizing:border-box;
-}
-
-.spinner-master2 {
-  position:absolute;
-  left:10px;
-  top:7px;
-  height:40px;
-  width:40px;
+body .c-hamburger{
   display: none;
 }
-
-.spinner-master2 input[type=checkbox] {
-  display:none;
-}
-
-.spinner-master2 label {
-  cursor:pointer;
-  position:absolute;
-  z-index:99;
-  height:100%;
-  width:100%;
-  top:10px;
-  left:0;
-}
-
-.spinner-master2 .spinner2 {
-  position:absolute;
-  height:5px;
-  width:100%;
-  background-color:#ECE9E6;}
-
-.spinner-master2 .diagonal.part-1 {
-  position:relative;
-  float:left;
-}
-
-.spinner-master2 .horizontal {
-  position:relative;
-  float:left;
-  margin-top:7px;
-}
-
-.spinner-master2 .diagonal.part-2 {
-  position:relative;
-  float:left;
-  margin-top:6px;
-}
-
-.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .horizontal {
-  opacity: 0;
-}
-
-.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-1 {
-  transform:rotate(135deg);
-  -webkit-transform:rotate(135deg);
-  margin-top:10px;
-}
-
-.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-2 {
-  transform:rotate(-135deg);
-  -webkit-transform:rotate(-135deg);
-  margin-top:-16px;
-}
-
-
-
 
 /* NAV */
 
@@ -297,9 +229,9 @@ table td:nth-child(odd) {
 /*  GO FULL WIDTH AT LESS THAN 700 PIXELS */
 
 @media only screen and (max-width: 700px) {
-  .span3-of-3, .span2-of-3, .span1-of-3 { 
-    width: 96%; 
-    margin: 2% 2%;
+ 
+  aside.nav{
+    padding: 0px;
   }
   .section { 
     padding: 1%;
@@ -319,22 +251,180 @@ table td:nth-child(odd) {
     margin-top: 15px;
   }
 
-  .nav-links {
-    display: none;
+   body aside .c-hamburger{
+    display: block;
   }
   
   .nav-heading-div {
     margin: 0px
   }
   
-  .spinner-master2 {
-    position: absolute;
-    right: 7px;
-    top: 7px;
-    display: block;
+  .nav-items .nav-links.menuOpen {
+    max-height: 1000px;
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+  }
+  .nav-items .nav-links {
+    max-height: 0;
+    overflow: hidden;
+    float: none;
+    text-align: center;
+    width: 100%;
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    transition: max-height 0.5s;
   }
 
   
+}
+
+
+
+
+
+
+/* hamburger icon */
+.c-hamburger {
+  display: block;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 75px;
+  height: 96px;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.1s;
+          transition: background 0.1s;
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  right: 25px;
+  height: 5px;
+  background: white;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -12px;
+}
+
+.c-hamburger span::after {
+  bottom: -12px;
+}
+
+/**
+ * Style 1
+ *
+ * Rotating hamburger icon (rot), that simply rotates 90 degrees when activated.
+ * Nothing too fancy, simple transition.
+ */
+/*.c-hamburger--rot {
+  background-color: #28aadc;
+}*/
+
+.c-hamburger--rot span {
+  -webkit-transition: -webkit-transform 0.1s;
+          transition: transform 0.1s;
+}
+
+/* active state, i.e. menu open */
+.c-hamburger--rot.is-active {
+  background-color: #166888;
+}
+
+.c-hamburger--rot.is-active span {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/**
+ * Style 2
+ * 
+ * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
+ * down to center and transform into an "x".
+ */
+.c-hamburger--htx {
+  background-color: transparent;
+}
+
+.c-hamburger--htx span {
+  -webkit-transition: background 0s 0.1s;
+          transition: background 0s 0.1s;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  -webkit-transition-duration: 0.1s, 0.1s;
+          transition-duration: 0.1s, 0.1s;
+  -webkit-transition-delay: 0.1s, 0s;
+          transition-delay: 0.1s, 0s;
+}
+
+.c-hamburger--htx span::before {
+  -webkit-transition-property: top, -webkit-transform;
+          transition-property: top, transform;
+}
+
+.c-hamburger--htx span::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+          transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+
+
+.c-hamburger--htx.is-active span {
+  background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  -webkit-transition-delay: 0s, 0.1s;
+          transition-delay: 0s, 0.1s;
 }
 
 
